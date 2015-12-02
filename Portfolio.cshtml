@@ -1,0 +1,21 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Portfolio";
+}
+
+<hgroup class="title">
+    <h1>
+    Portfolio
+    </h1>
+</hgroup>
+
+<div id="filters">
+    <input type="checkbox" value="Fifth" name="Fifth" id="fifth" checked="checked"/><label for="fifth">Fith</label>
+    <input type="checkbox" value="Sixth" name="Sixth" id="Sixth" checked="checked"/><label for="Sixth">Fith</label>
+</div>
+
+
+
+<section id="portfolio" class="post-thumbnails">
+    @RenderPage("~/Shared/_TileMini.cshtml")
+</section>

@@ -1,0 +1,106 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Craze Creative // The website design and develpoment portfolio of Matty Craze";    
+}
+
+@*@section featured {
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>@Page.Title.</h1>
+            <h2>Modify this template to jump-start your ASP.NET Web Pages application.</h2>
+        </hgroup>
+        <p>
+            To learn more about ASP.NET Web Pages, visit
+            <a href="http://asp.net/webpages" title="ASP.NET Web Pages Website">http://asp.net/webpages</a>.
+            The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET Web Pages.
+            If you have any questions about ASP.NET Web Pages, visit
+            <a href="http://forums.iis.net/1166.aspx" title="ASP.NET Web Pages Forum">our forums</a>.
+        </p>
+    </div>
+</section>
+}*@
+
+
+<section>
+<img src="/Images/Logos/Craze-Creative-150x150.png" alt="Craze Creative Logo" class="float-center" id="logo-main"/>
+    <h1 id="hp-title"><span class="craze">Craze</span><br/><span class="creative">creative</span></h1>
+    <h3>The works and working thoughts of freelancer Matty Craze</h3>    <h3>Digital designer //  Front-end developer // UX focused // Sport obsessed // Melbourne made, Dublin based</h3>    <h3>mattycraze@crazecreative.com</h3>
+</section>
+
+
+
+@section featured {
+<div class="col-2">
+    <section id="timeline" class="post-thumbnails">
+        @RenderPage("~/Shared/_TileMini.cshtml")
+    </section>
+    @*<article>
+        <span class="badge ion-coffee circle-solid"></span>
+        <h2>working remotely</h2>
+        <p class="date">12/10/15</p>
+        <p class="tags">#Musings  #WorkingRemotely</p>
+        <p>Lorem ipsum dolor sit amet, sit nobis meliore convenire an. Eu epicurei pertinax vim, ei fugit suscipiantur ius. Vim nisl phaedrum rationibus no. Ea mazim labitur ceteros cum. Alienum vulputate ei vis, sit ne utamur probatus, mel etiam apeirian periculis eu.</p>        <p>Has interesset omittantur suscipiantur eu, alia disputationi vim an, ei quodsi expetendis sed. Mei veniam possim sanctus ut. Ne legimus facilis nam, quot mutat... <a href="">read more</a></p>
+        <div class="text-align-center"><a class="view-more button-border" href="">view more musings</a></div>
+    </article>
+
+    <article>
+        <span class="badge ion-code circle-solid"></span>
+        <h2>spotjobs.com Dashboard</h2>
+        <p class="date">3/9/15</p>
+        <p class="tags">#WebDesignAndDevelopment  #UI #SpotJobs</p>
+        <p>Lorem ipsum dolor sit amet, sit nobis meliore convenire an. Eu epicurei pertinax vim, ei fugit suscipiantur ius. Vim nisl phaedrum rationibus no. Ea mazim labitur ceteros cum. Alienum vulputate ei vis, sit ne utamur probatus, mel etiam apeirian periculis eu.</p>        <p>Has interesset omittantur suscipiantur eu, alia disputationi vim an, ei quodsi expetendis sed. Mei veniam possim sanctus ut. Ne legimus facilis nam, quot mutat... <a href="">read more</a></p>
+        <div class="text-align-center"><a class="view-more button-border" href="">view more web design and development</a></div>
+    </article>*@
+</div>
+}
+
+@*<h3>We suggest the following:</h3>
+
+<ol class="round">
+    <li class="one">
+        <h5>Getting Started</h5>
+        ASP.NET Web Pages and the new Razor syntax provide a fast, approachable, and lightweight way to combine server code with HTML
+        to create dynamic web content. Connect to databases, add video, link to social networking sites, and include many more features
+        that let you create beautiful sites using the latest web standards.
+        <a href="http://go.microsoft.com/fwlink/?LinkId=245139">Learn more…</a>
+    </li>
+
+    <li class="two">
+        <h5>Add NuGet packages and jump start your coding</h5>
+        NuGet makes it easy to install and update free libraries and tools.
+        <a href="http://go.microsoft.com/fwlink/?LinkId=245140">Learn more…</a>
+    </li>
+
+    <li class="three">
+        <h5>Find Web Hosting</h5>
+        You can easily find a web hosting company that offers the right mix of features and price for your applications.
+        <a href="http://go.microsoft.com/fwlink/?LinkId=245143">Learn more…</a>
+    </li>
+</ol>*@
+
+@*@section featured {
+    <section>
+        <img src="/Content/Images/Logos/Craze-Creative-150x150.png" alt="Craze Creative Logo" class="float-center" style="margin-top: 40px;"/>
+        <h1 id="hp-title"><span class="craze">Craze</span><br/><span class="creative">creative</span></h1>
+        <h3>The works and working thoughts of freelancer Matty Craze</h3>        <h3>Digital designer //  Front-end developer // UX focused // Sport obsessed // Melbourne made, Dublin based</h3>        <h3>mattycraze@crazecreative.com</h3>
+    </section>
+}
+
+<article>
+    <span class="badge ion-coffee circle-solid"></span>
+    <h2>working remotely</h2>
+    <p class="date">12/10/15</p>
+    <p class="tags">#Musings  #WorkingRemotely</p>
+    <p>Lorem ipsum dolor sit amet, sit nobis meliore convenire an. Eu epicurei pertinax vim, ei fugit suscipiantur ius. Vim nisl phaedrum rationibus no. Ea mazim labitur ceteros cum. Alienum vulputate ei vis, sit ne utamur probatus, mel etiam apeirian periculis eu.</p>    <p>Has interesset omittantur suscipiantur eu, alia disputationi vim an, ei quodsi expetendis sed. Mei veniam possim sanctus ut. Ne legimus facilis nam, quot mutat... <a href="">read more</a></p>
+    <div class="text-align-center"><a class="view-more button-border" href="">view more musings</a></div>
+</article>
+
+<article>
+    <span class="badge ion-code circle-solid"></span>
+    <h2>spotjobs.com Dashboard</h2>
+    <p class="date">3/9/15</p>
+    <p class="tags">#WebDesignAndDevelopment  #UI #SpotJobs</p>
+    <p>Lorem ipsum dolor sit amet, sit nobis meliore convenire an. Eu epicurei pertinax vim, ei fugit suscipiantur ius. Vim nisl phaedrum rationibus no. Ea mazim labitur ceteros cum. Alienum vulputate ei vis, sit ne utamur probatus, mel etiam apeirian periculis eu.</p>    <p>Has interesset omittantur suscipiantur eu, alia disputationi vim an, ei quodsi expetendis sed. Mei veniam possim sanctus ut. Ne legimus facilis nam, quot mutat... <a href="">read more</a></p>
+    <div class="text-align-center"><a class="view-more button-border" href="">view more web design and development</a></div>
+</article>*@

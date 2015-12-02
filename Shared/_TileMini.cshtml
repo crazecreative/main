@@ -1,0 +1,30 @@
+﻿@{
+    var db = Database.Open("CrazeCreative");
+    var selectQueryString = "SELECT * FROM PostPortfolio";
+    var data = db.Query(selectQueryString);
+}        
+
+
+<ul>
+    @foreach(var row in data.Take(6))
+    {
+        <li class="@row.tag">
+            <article>
+                <div class="content-wrapper">
+                    <span class="badge ion-coffee circle-solid"></span>
+                    <div class="thumbnail-wrapper">
+                        <img src="~/Images/Backgrounds/js-dashboard-iphone-mock.jpg" alt="image" class="thumbnail"/>
+                    </div>
+                    <div class="info-wrapper">
+                        <h2><a href="~/Portfolio/Post?Id=@row.id">@row.Title</a></h2>
+                        @*<h2><a href="@Href("~/Portfolio", row.Id)">@row.Title</a></h2>*@
+                        <p class="date">@row.Date.ToString("d MMM yyyy")</p>
+                        <p class="tags">@Html.Raw(row.Tag)</p>
+                        <p class="description">@Html.Raw(row.Description)<a href="">read more</a></p>
+                    </div>
+                </div>
+            </article>
+        </li>
+    }
+</ul>
+

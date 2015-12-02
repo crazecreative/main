@@ -1,0 +1,65 @@
+﻿<header>         
+    <nav>
+        <a href="~/" class="font-mont-norm" id="logo" >
+                <span>c</span>
+        </a>
+        <div class="main-menu">
+            @*<a href="" class="width-100 ion-code ">
+                <span class="wide">web design & development</span><span class="short">web design <br/>& dev</span>
+            </a>
+            <a href="" class="width-100 ion-edit">
+                graphic design
+            </a>*@
+            <div class="sub-header-toggle">
+                <a href="~/Portfolio" class="width-100 ion-images">
+                    portfolio
+                </a>
+                <div class="sub-menu" style="display: none;">
+                    <a href="" class="width-100 ion-code ">
+                        <span class="wide">web design & development</span><span class="short">web design <br/>& dev</span>
+                    </a>
+                    <a href="" class="width-100 ion-edit">
+                        graphic design
+                    </a>
+                </div>
+            </div>
+            <a href="~/about" class="width-100 ion-information">
+                about
+            </a>
+            <a href="" class="width-100 ion-coffee">
+                musings
+            </a>
+            <a href="~/contact" class="width-100 ion-chatboxes">
+                contact
+            </a>
+            <a href="" class="width-100 ion-hammer">
+                resources
+            </a>
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/crazecreative" class="circle-border social-icon" target="_blank"><span class="ion-social-facebook"></span></a>
+            <a href="https://twitter.com/MattCraze" class="circle-border social-icon" target="_blank"><span class="ion-social-twitter"></span></a>
+            <a href="mailto:mattycraze@gmail.com" class="circle-border social-icon"><span class="email">@@</span></a>
+        </div>
+    </nav>
+                
+        @*<div class="float-right">
+            <section id="login">
+                @if (WebSecurity.IsAuthenticated) {
+                    <text>
+                        Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
+                        <form id="logoutForm" action="~/Account/Logout" method="post">
+                            @AntiForgery.GetHtml()
+                            <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+                        </form>
+                    </text>
+                } else {
+                    <ul>
+                        <li><a href="~/Account/Register">Register</a></li>
+                        <li><a href="~/Account/Login">Log in</a></li>
+                    </ul>
+                }
+            </section>
+                    
+        </div>*@
+</header>

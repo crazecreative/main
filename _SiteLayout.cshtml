@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Craze Creative / @Page.Title</title>
+        <link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/css/Site.css" rel="stylesheet" type="text/css" />
+        <link href="../Content/css/ionicons.min.css" type="text/css" rel="stylesheet" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+        <script src="~/Scripts/jquery-ui-1.8.24.js"></script>
+        <script src="~/Scripts/modernizr-2.6.2.js"></script>
+        <script src="~/Scripts/site.js"></script>
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <body>
+    @RenderPage("~/Shared/_Header.cshtml")
+        @*<div id="body">
+           @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                
+            </section>
+        </div>*@
+        @*<footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET Web Page</p>
+                </div>
+            </div>
+        </footer>*@
+
+        <div class="main">
+            @if (IsSectionDefined("featured")) { 
+                <div class="col-1">
+                    @RenderBody()
+                    @RenderPage("~/Shared/_Footer.cshtml")
+                </div>
+            @RenderSection("featured", required: false)
+            } 
+            else 
+            {
+                @RenderBody()
+                @RenderPage("~/Shared/_Footer.cshtml")
+            }
+        </div>
+        
+        @RenderSection("Scripts", required: false)
+    </body>
+</html>

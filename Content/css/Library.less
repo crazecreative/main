@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic);
+
+.border-radius (@radius: 50%) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+.border-radiuses-top (@topright: 3px, @topleft: 3px) {
+	-webkit-border-top-right-radius:    @topright;
+	-webkit-border-top-left-radius:     @topleft;
+
+	-moz-border-radius-topright:        @topright;
+	-moz-border-radius-topleft:         @topleft;
+
+	border-top-right-radius:            @topright;
+	border-top-left-radius:             @topleft;
+}
+
+.box-sizing (@type: border-box) {
+	-webkit-box-sizing: @type;
+	-moz-box-sizing:    @type;
+	box-sizing:         @type;
+}
+
+.opacity (@opacity: 1) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
+}
+
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+	-webkit-animation: @name @duration @delay @ease;
+	-moz-animation:    @name @duration @delay @ease;
+	-ms-animation:     @name @duration @delay @ease;
+}
+
+.font-mont-norm{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
+}
+
+.font-mont-bold{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+}
+
+.font-lato-light{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.font-lato-bold{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.font-lato-light-italic{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.font-lato-bold-italic{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.inline-block{
+    display: inline-block;
+}

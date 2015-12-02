@@ -1,0 +1,46 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Contact";
+
+    var db = Database.Open("CrazeCreative");
+
+    //var UrlTitle = Context.GetRouteValue("Title"); 
+    //if (Title == null){Response.Redirect("~/");}
+
+    var Id = Request["Id"];
+    var selectQueryString = "SELECT * FROM PostPortfolio where id=@0";
+    
+    var row = db.QuerySingle(selectQueryString, Id);
+    var Title = row.Title;
+    var Description = row.Description;
+    //var PostTitle = data.Title;
+    //var PostDescription = data.Description;
+
+
+    //var db = Database.Open("CrazeCreative"); 
+
+    //var Tag = Context.GetRouteValue("Tag"); 
+    //if (Tag == null) 
+    //{ 
+    //    Response.Redirect("~/"); 
+    //} 
+    //
+    //var data = db.QuerySingle("SELECT * FROM PostPortfolio Where Tag=@0", Tag); 
+    //var PostTag = data.Tag; 
+}
+
+
+
+<hgroup class="title">
+    <h1>@Title</h1>
+</hgroup>
+
+<section>
+    <p>
+    @Description
+    </p>
+</section>
+
+@*
+<p>@Html.Raw(PostDescription)</p>*@
+
